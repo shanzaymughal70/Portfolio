@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umer's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e6f0fa; /* light blue */
+      color: #1c3d5a; /* dark navy blue */
+    }
+
+    /* Smooth page fade-in */
+    body {
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background-color: #1c3d5a; /* dark shade */
+      color: #e6f0fa; /* light shade */
+      padding: 20px;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #e6f0fa;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeUp 1s ease-in-out;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: #1c3d5a;
+      margin-bottom: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .about, .projects, .contact {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about:hover, .projects:hover, .contact:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .project-box {
+      background: #e6f0fa;
+      padding: 15px;
+      border: 1px solid #1c3d5a;
+      border-radius: 8px;
+      margin-top: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .instagram-btn {
+      display: inline-flex;
+      align-items: center;
+      background: #1c3d5a;
+      color: #e6f0fa;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: transform 0.3s ease, background 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .instagram-btn:hover {
+      background: #16324a;
+      transform: scale(1.1);
+    }
+
+    .instagram-btn svg {
+      margin-right: 8px;
+    }
+
+    .btn-center {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #1c3d5a;
+      color: #e6f0fa;
+      margin-top: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      animation: fadeIn 2s ease-in;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Umer's Portfolio</h1>
+    <p>STUDENT - UK LEVEL 03 </p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! My name is <strong>Umer</strong>. I am a student at Superior College, currently studying at UK Level 03. 
+    I am passionate about learning new skills, exploring technology, and building my knowledge in different fields.</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-box">
+      <h3 style="text-transform: uppercase; font-weight: bold;">Portfolio Website</h3>
+      <p>This is my personal portfolio website created with basic HTML and CSS. It showcases my skills, contact information, and future projects.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>"If you’d like to connect with me, feel free to reach out anytime! I’m always excited to meet new people, share ideas, and explore opportunities for growth. Whether it’s for academic collaboration, creative projects, or just a friendly chat, I’d love to hear from you. You can easily reach me through email."</p>
+    <p>Email: <a href="mailto:umer@gmail.com">umer@gmail.com</a></p>
+    <div class="btn-center">
+      
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Umer </p>
+  </footer>
+
+</body>
+</html>
